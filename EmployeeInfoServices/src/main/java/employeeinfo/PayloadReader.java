@@ -17,7 +17,7 @@ public class PayloadReader {
     public static String resourcePath = "/api/SingleEmployeeResources";
     public static String moduleName = "/EmployeeInfoServices";
 
-    public static int postPayload(String baseUrl, String resourcePath,String path)throws IOException{
+    public static int postPayload(String baseUrl, String resourcePath, String path) throws IOException{
         RestAssured.baseURI = baseUrl;
         String workingDirectory = System.getProperty("user.dir");
         File filePath = new File(workingDirectory+moduleName+path);

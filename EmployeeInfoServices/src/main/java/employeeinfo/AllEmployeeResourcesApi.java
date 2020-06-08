@@ -16,6 +16,7 @@ public class AllEmployeeResourcesApi {
         String statusLine = response.getStatusLine();
         int statusCode = response.statusCode();
         String body = response.getBody().prettyPrint();
+        System.out.println(body);
         System.out.println(statusLine);
         Assert.assertEquals(statusLine,"HTTP/1.1 200 OK");
         Assert.assertEquals(statusCode,200);
